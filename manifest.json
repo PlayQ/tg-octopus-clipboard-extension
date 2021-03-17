@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "TG Octopus Clibpoard",
+    "version": "1.0",
+    "description": "TG Octopus clipboard helper",
+    "icons": {
+      "48": "icons/logo-48.png"
+    },
+    "permissions": ["clipboardRead"],
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "tgoctopusclipboardhelper@example.com"
+      }
+    },
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://localhost/*","*://*.octopus2.playq.net/*"],
+        "js": ["clipboard.js"]
+      }
+    ]
+  
+  }
