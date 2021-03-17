@@ -1,7 +1,7 @@
 document.body.dataset.clipboardhelperinstalled = 1;
-let myPort = browser.runtime.connect({name:"port-from-cs"});
+const port = browser.runtime.connect({name:"port-from-cs"});
 
-myPort.onMessage.addListener((message) => {
+port.onMessage.addListener((message) => {
     window.postMessage({type: 'CLIPBOARD_CONTENT', content: message.content}, '*')
 });
 
@@ -11,12 +11,6 @@ window.addEventListener("message", (event) => {
     }
         
     if (event.data.type && (event.data.type == "REQUEST_CLIPBOARD_CONTENT")) {
-        myPort.postMessage({type: 'REQUEST_CLIPBOARD_CONTENT'});
+        port.postMessage({type: 'REQUEST_CLIPBOARD_CONTENT'});
     }
 });
-
-const extensionInterface = {
-    tgoctopusClipboardHelperFunction: () => {}
-}
-window.wrappedJSObject.extensionInterface = cloneInto(extensionInterface, window, {cloneFunctions: true});
-  
