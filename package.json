@@ -10,5 +10,20 @@
   "license": "ISC",
   "dependencies": {
     "web-ext": "^6.0.0"
+  },
+  "webExt": {
+    "build": {
+      "overwriteDest": true
+    },
+    "sign": {
+      "apiKey": "user:16758989:250",
+      "apiSecret": "30d8fa95a0fcdd3337ff8d1f2c1ea0c5d1827b9dc2984e5b3ea7132e367c8b31"
+    },
+    "ignoreFiles": [
+      "docs",
+      "package.json",
+      "package-lock.json",
+      "README.md"
+    ]
   }
 }

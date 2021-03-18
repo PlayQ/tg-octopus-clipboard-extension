@@ -22,10 +22,18 @@ This extension can only be installed locally.
    <img src="docs/step4.png"/>
 5. Browse to the .xpi file and press Open. A notification will appear to the left of the address bar that an external source wants to install an add on.
    <img src="docs/step5.png"/>
-6. Verify installation. Press “Install” in the notification and restart Firefox if necessary.
+6. Verify installation. Press “Install” in the notification and restart Firefox.
    <img src="docs/step6.png"/>
 
 ## For developres
 
 A full description of how to build and sign an extension can be found here:
 https://extensionworkshop.com/documentation/develop/getting-started-with-web-ext/
+Briefly:
+
+1. web-ext lint
+2. web-ext build
+3. web-ext sign
+
+All necessary settings, keys and parameters for the current extension listed in the package.json file under the "webExt" key.
+web-ext will automattically try to load its configuration options from a "webExt" property every time it runs.
