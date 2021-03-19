@@ -17,7 +17,7 @@
     },
     "content_scripts": [
       {
-        "matches": ["*://localhost/*","*://*.octopus2.playq.net/*"],
+        "matches": ["*://localhost/*","*://*.playq.net/*"],
         "js": ["clipboard.js"]
       }
     ]
