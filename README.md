@@ -9,7 +9,7 @@ The reason for this is that firefox only allows access to the clipboard data fro
 
 This extension can only be installed locally.
 
-1. Download and save [this installer file](https://github.com/PlayQ/tg-octopus-clipboard-extension/raw/main/web-ext-artifacts/tg_octopus_clibpoard-1.0-an%2Bfx.xpi) on your computer.
+1. Download and save [this installer file](https://github.com/PlayQ/tg-octopus-clipboard-extension/raw/main/web-ext-artifacts/tg_octopus_clibpoard-1.0-fx.xpi) on your computer.
 2. Go to Settings (☰) > Add-ons. This page will display any installed extensions. From here you can update, remove, or search for new extensions and add-ons.
 
    > This page can also be accessed by typing “about:addons” into the address bar.
